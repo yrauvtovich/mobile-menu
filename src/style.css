@@ -6,8 +6,10 @@
 #nav-icon {
   width: 60px;
   height: 45px;
-  position: relative;
+  position: fixed;
   margin: 50px auto;
+  z-index: 9999999;
+  box-sizing: content-box;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
