@@ -103,39 +103,13 @@
 .menu ul li a {
   color: #fff;
   display: inline-block;
-  font: 50px "Open Sans", sans-serif;
   padding: 28px 15px;
   position: relative;
   text-decoration: none;
   outline: none;
-}
-.menu ul li span {
-  display: inline-block;
-  height: 24px;
-  top: 5px;
-  position: relative;
-  width: 24px;
-}
-.menu ul li span:before,
-.menu ul li span:after {
-  background-color: #BFE2FF;
-  content: '';
-  display: block;
-  height: 3px;
-  position: absolute;
-  width: 15px;
-}
-.menu ul li span:before {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.menu ul li span:after {
-  transition: all 0.15s ease-in-out;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-}
-.menu ul li span.subtriggered:after {
-  transform: translateY(-50%) rotate(0);
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
 .menu ul li ul li a {
   padding: 8px 30px;
@@ -151,5 +125,86 @@
 }
 .menu ul .subtriggered + ul {
   display: block;
+}
+@keyframes grow {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+    font: 1px "Open Sans", sans-serif;
+  }
+  10% {
+    opacity: 0.1;
+    font: 5px "Open Sans", sans-serif;
+  }
+  20% {
+    opacity: 0.2;
+    font: 10px "Open Sans", sans-serif;
+  }
+  25% {
+    opacity: 0.25;
+    font: 12px "Open Sans", sans-serif;
+  }
+  30% {
+    opacity: 0.3;
+    font: 15px "Open Sans", sans-serif;
+  }
+  35% {
+    opacity: 0.35;
+    font: 17px "Open Sans", sans-serif;
+  }
+  40% {
+    opacity: 0.4;
+    font: 20px "Open Sans", sans-serif;
+  }
+  45% {
+    opacity: 0.45;
+    font: 22px "Open Sans", sans-serif;
+  }
+  50% {
+    opacity: 0.5;
+    font: 25px "Open Sans", sans-serif;
+  }
+  55% {
+    opacity: 0.55;
+    font: 27px "Open Sans", sans-serif;
+  }
+  60% {
+    opacity: 0.6;
+    font: 30px "Open Sans", sans-serif;
+  }
+  65% {
+    opacity: 0.65;
+    font: 32px "Open Sans", sans-serif;
+  }
+  70% {
+    opacity: 0.7;
+    font: 35px "Open Sans", sans-serif;
+  }
+  75% {
+    opacity: 0.75;
+    font: 37px "Open Sans", sans-serif;
+  }
+  80% {
+    opacity: 0.8;
+    font: 40px "Open Sans", sans-serif;
+  }
+  85% {
+    opacity: 0.85;
+    font: 42px "Open Sans", sans-serif;
+  }
+  90% {
+    opacity: 0.9;
+    font: 45px "Open Sans", sans-serif;
+  }
+  95% {
+    opacity: 0.95;
+    font: 47px "Open Sans", sans-serif;
+  }
+  100% {
+    opacity: 1;
+    font: 50px "Open Sans", sans-serif;
+  }
 }
 /*# sourceMappingURL=style.css.map */
