@@ -73,6 +73,10 @@
 }
 /* Menu */
 .menu {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
   transition: all 0.3s ease-in-out;
   background-color: #000000;
   height: 100vh;
@@ -87,12 +91,6 @@
   overflow-y: auto;
 }
 .menu ul {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  transition: all 0.3s ease-in-out;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -107,9 +105,7 @@
   position: relative;
   text-decoration: none;
   outline: none;
-  animation-name: grow;
-  animation-duration: 4s;
-  animation-fill-mode: both;
+  font: 50px "Open Sans", sans-serif;
 }
 .menu ul li ul li a {
   padding: 8px 30px;
@@ -126,29 +122,46 @@
 .menu ul .subtriggered + ul {
   display: block;
 }
+.animation__li-1 {
+  animation-name: grow;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+.animation__li-2 {
+  animation-name: grow;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+.animation__li-3 {
+  animation-name: grow;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+}
+.animation__li-4 {
+  animation-name: grow;
+  animation-duration: 7s;
+  animation-fill-mode: both;
+}
+.animation__li-5 {
+  animation-name: grow;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+}
 @keyframes grow {
   0% {
     opacity: 0;
   }
-  25% {
-    opacity: 0.25;
-    font: 12px "Open Sans", sans-serif;
-    transition: 1s;
+  35% {
+    opacity: 0.1;
   }
   50% {
-    opacity: 0.5;
-    font: 25px "Open Sans", sans-serif;
-    transition: 1s;
+    opacity: 0.2;
   }
   75% {
     opacity: 0.75;
-    font: 37px "Open Sans", sans-serif;
-    transition: 1s;
   }
   100% {
     opacity: 1;
-    font: 50px "Open Sans", sans-serif;
-    transition: 1s;
   }
 }
 /*# sourceMappingURL=style.css.map */
