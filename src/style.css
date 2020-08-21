@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* Icon */
 #nav-icon {
   width: 60px;
@@ -21,6 +22,7 @@
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
+
 #nav-icon span {
   display: block;
   position: absolute;
@@ -39,38 +41,45 @@
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
+
 #nav-icon span:nth-child(1) {
   top: 0;
 }
-#nav-icon span:nth-child(2),
-#nav-icon span:nth-child(3) {
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
   top: 18px;
 }
+
 #nav-icon span:nth-child(4) {
   top: 36px;
 }
+
 #nav-icon.open span:nth-child(1) {
   top: 18px;
   width: 0;
   left: 50%;
 }
+
 #nav-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 #nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 #nav-icon.open span:nth-child(4) {
   top: 18px;
   width: 0;
   left: 50%;
 }
+
 /* Menu */
 .menu {
   display: flex;
@@ -90,14 +99,17 @@
   z-index: 9999998;
   overflow-y: auto;
 }
+
 .menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .menu ul li {
   transition: all 0.3s ease-in-out;
 }
+
 .menu ul li a {
   color: #fff;
   display: inline-block;
@@ -107,46 +119,56 @@
   outline: none;
   font: 50px "Open Sans", sans-serif;
 }
+
 .menu ul li ul li a {
   padding: 8px 30px;
   font-size: 18px;
   color: #BFE2FF;
 }
+
 .triggered .menu {
   opacity: 0.7;
   transform: translateY(0);
 }
+
 .menu ul ul {
   display: none;
 }
+
 .menu ul .subtriggered + ul {
   display: block;
 }
+
 .animation__li-1 {
   animation-name: grow;
   animation-duration: 4s;
   animation-fill-mode: both;
 }
+
 .animation__li-2 {
   animation-name: grow;
   animation-duration: 5s;
   animation-fill-mode: both;
 }
+
 .animation__li-3 {
   animation-name: grow;
   animation-duration: 6s;
   animation-fill-mode: both;
 }
+
 .animation__li-4 {
   animation-name: grow;
   animation-duration: 7s;
   animation-fill-mode: both;
 }
+
 .animation__li-5 {
   animation-name: grow;
   animation-duration: 8s;
   animation-fill-mode: both;
 }
+
 @keyframes grow {
   0% {
     opacity: 0;
@@ -164,4 +186,5 @@
     opacity: 1;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
