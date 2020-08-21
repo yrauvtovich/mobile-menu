@@ -122,7 +122,7 @@
 
 .menu ul li ul li a {
   padding: 8px 30px;
-  font-size: 18px;
+  font-size: 20px;
   color: #BFE2FF;
 }
 
@@ -139,31 +139,31 @@
   display: block;
 }
 
-.animation__li-1 {
+.animation-li-1 {
   animation-name: grow;
   animation-duration: 4s;
   animation-fill-mode: both;
 }
 
-.animation__li-2 {
+.animation-li-2 {
   animation-name: grow;
   animation-duration: 5s;
   animation-fill-mode: both;
 }
 
-.animation__li-3 {
+.animation-li-3 {
   animation-name: grow;
   animation-duration: 6s;
   animation-fill-mode: both;
 }
 
-.animation__li-4 {
+.animation-li-4 {
   animation-name: grow;
   animation-duration: 7s;
   animation-fill-mode: both;
 }
 
-.animation__li-5 {
+.animation-li-5 {
   animation-name: grow;
   animation-duration: 8s;
   animation-fill-mode: both;

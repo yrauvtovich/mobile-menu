@@ -1,13 +1,15 @@
 $(document).ready(function(){
     $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-        $('.mobile-menu').toggleClass('triggered');
+        if(!$(this).hasClass("open")){
+            $(this).toggleClass('open');
+            $('.mobile-menu').toggleClass('triggered');
+            $ ('div.menu').show();
+        } else {
+            $(this).removeClass('open');
+            $('.mobile-menu').removeClass('triggered');
+            $('div.menu').hide();
+        }
     });
-    $('.has-children > a').after('<span></span>');
-    $('.has-children span').on('click', function() {
-        $(this).toggleClass('subtriggered');
-    });
-
-
+    $('div.menu').hide();
 });
 

@@ -86,58 +86,7 @@ $percent-count: 100;
 }
 
 /* Menu */
-//.menu-bar {
-//  transition: all 0.3s ease-in-out;
-//  transition-delay: 0.2s;
-//  background-color: #337AB7;
-//  border-radius: 50%;
-//  border: 4px solid #BFE2FF;
-//  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
-//  position: fixed;
-//  bottom: 10px;
-//  right: 10px;
-//  width: 50px;
-//  height: 50px;
-//  z-index: 9999999;
-//  box-sizing: content-box;
-//}
-//.menu-bar span {
-//  transition: all 0.3s ease-in-out;
-//  background-color: #fff;
-//  display: inline-block;
-//  height: 3px;
-//  position: absolute;
-//  top: 50%;
-//  left: 10px;
-//  width: 22px;
-//}
-//.menu-bar span:before,
-//.menu-bar span:after {
-//  transition: all 0.3s ease-in-out;
-//  background-color: #fff;
-//  content: '';
-//  display: block;
-//  height: 3px;
-//  position: absolute;
-//  width: 30px;
-//}
-//.menu-bar span:before {
-//  top: -8px;
-//}
-//.menu-bar span:after {
-//  top: 8px;
-//}
-//.triggered .menu-bar span {
-//  width: 0;
-//}
-//.triggered .menu-bar span:before {
-//  transform: rotate(45deg);
-//  top: 0;
-//}
-//.triggered .menu-bar span:after {
-//  transform: rotate(-45deg);
-//  top: 0;
-//}
+
 .menu {
   display: flex;
   align-items: center;
@@ -156,15 +105,17 @@ $percent-count: 100;
   z-index: 9999998;
   overflow-y: auto;
 }
+
 .menu ul {
-  //transition: all 0.3s ease-in-out;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .menu ul li {
   transition: all 0.3s ease-in-out;
 }
+
 .menu ul li a {
   color: #fff;
   display: inline-block;
@@ -177,41 +128,47 @@ $percent-count: 100;
 
 .menu ul li ul li a {
   padding: 8px 30px;
-  font-size: 18px;
+  font-size: 20px;
   color: #BFE2FF;
 }
 .triggered .menu {
   opacity: 0.7;
   transform: translateY(0);
 }
+
 .menu ul ul {
   display: none;
 }
+
 .menu ul .subtriggered + ul {
   display: block;
 }
 
-.animation__li-1 {
+.animation-li-1 {
   animation-name: grow;
   animation-duration: 4s;
   animation-fill-mode: both;
 }
-.animation__li-2 {
+
+.animation-li-2 {
   animation-name: grow;
   animation-duration: 5s;
   animation-fill-mode: both;
 }
-.animation__li-3 {
+
+.animation-li-3 {
   animation-name: grow;
   animation-duration:6s;
   animation-fill-mode: both;
 }
-.animation__li-4 {
+
+.animation-li-4 {
   animation-name: grow;
   animation-duration: 7s;
   animation-fill-mode: both;
 }
-.animation__li-5 {
+
+.animation-li-5 {
   animation-name: grow;
   animation-duration: 8s;
   animation-fill-mode: both;
