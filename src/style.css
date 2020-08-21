@@ -1,3 +1,7 @@
+body {
+  background-color: #36675C;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +32,7 @@
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #000000;
+  background: #7DA3A1;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -87,7 +91,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   transition: all 0.3s ease-in-out;
-  background-color: #000000;
+  background-color: #324851;
   height: 100vh;
   opacity: 0.5;
   padding: 15px;
@@ -104,6 +108,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .menu ul li {
@@ -111,19 +116,13 @@
 }
 
 .menu ul li a {
-  color: #fff;
+  color: #86ac41;
   display: inline-block;
   padding: 28px 15px;
   position: relative;
   text-decoration: none;
   outline: none;
-  font: 50px "Open Sans", sans-serif;
-}
-
-.menu ul li ul li a {
-  padding: 8px 30px;
-  font-size: 20px;
-  color: #BFE2FF;
+  font: 50px "Comic Sans MS", sans-serif;
 }
 
 .triggered .menu {
@@ -141,31 +140,31 @@
 
 .animation-li-1 {
   animation-name: grow;
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-fill-mode: both;
 }
 
 .animation-li-2 {
   animation-name: grow;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: both;
 }
 
 .animation-li-3 {
   animation-name: grow;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-fill-mode: both;
 }
 
 .animation-li-4 {
   animation-name: grow;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-fill-mode: both;
 }
 
 .animation-li-5 {
   animation-name: grow;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-fill-mode: both;
 }
 
@@ -173,13 +172,16 @@
   0% {
     opacity: 0;
   }
-  35% {
-    opacity: 0.1;
-  }
   50% {
-    opacity: 0.2;
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.25;
   }
   75% {
+    opacity: 0.5;
+  }
+  90% {
     opacity: 0.75;
   }
   100% {
