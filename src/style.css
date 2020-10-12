@@ -87,11 +87,13 @@ body {
 /* Menu */
 .menu {
   display: flex;
-  align-items: center;
-  flex-flow: column nowrap;
   justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: column;
   transition: all 0.3s ease-in-out;
   background-color: #324851;
+  width: 100vw;
   height: 100vh;
   opacity: 0.5;
   padding: 15px;
@@ -99,7 +101,6 @@ body {
   top: 0;
   left: 0;
   transform: translateY(-100%);
-  width: 100vw;
   z-index: 9999998;
   overflow-y: auto;
 }
@@ -122,7 +123,7 @@ body {
   position: relative;
   text-decoration: none;
   outline: none;
-  font: 50px "Comic Sans MS", sans-serif;
+  font: 4em "Comic Sans MS", sans-serif;
 }
 
 .triggered .menu {
