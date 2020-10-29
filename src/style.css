@@ -136,6 +136,7 @@ body {
 }
 
 .menu ul li a {
+  opacity: 0;
   color: #86ac41;
   display: inline-block;
   padding: 22px 15px;
@@ -159,51 +160,26 @@ body {
 }
 
 .animation-li-1 {
-  animation-name: grow;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  animation: grow 2s forwards;
 }
 
 .animation-li-2 {
-  animation-name: grow;
-  animation-duration: 3s;
-  animation-fill-mode: both;
+  animation: grow 2s forwards 1s;
 }
 
 .animation-li-3 {
-  animation-name: grow;
-  animation-duration: 4s;
-  animation-fill-mode: both;
+  animation: grow 2s forwards 2s;
 }
 
 .animation-li-4 {
-  animation-name: grow;
-  animation-duration: 5s;
-  animation-fill-mode: both;
+  animation: grow 2s forwards 3s;
 }
 
 .animation-li-5 {
-  animation-name: grow;
-  animation-duration: 6s;
-  animation-fill-mode: both;
+  animation: grow 2s forwards 4s;
 }
 
 @keyframes grow {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0.25;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  90% {
-    opacity: 0.75;
-  }
   100% {
     opacity: 1;
   }
